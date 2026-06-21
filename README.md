@@ -1,6 +1,5 @@
 # Malaysia Poverty Monitor
 
-[![CI](https://github.com/AfifFarihin/malaysia-poverty-monitor/actions/workflows/ci.yml/badge.svg)](https://github.com/AfifFarihin/malaysia-poverty-monitor/actions/workflows/ci.yml)
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/Code%20License-MIT-blue.svg)](LICENSE)
 
@@ -92,7 +91,7 @@ uv run pytest -q
 uv run python scripts/run_notebooks.py
 ```
 
-The CI workflow executes the complete notebook pipeline, then runs the same checks on every push and pull request.
+The CI workflow executes the complete notebook pipeline, then runs the same checks for pull requests or a manual workflow dispatch.
 
 ## Data Provenance
 
