@@ -1,0 +1,159 @@
+state_key,state_raw,year,poverty_absolute,poverty_hardcore,poverty_relative
+Johor,Johor,2002,1.8,0.2,16.1
+Johor,Johor,2004,2.0,0.3,15.3
+Johor,Johor,2007,1.5,0.2,14.2
+Johor,Johor,2009,1.3,0.1,17.2
+Johor,Johor,2012,0.9,0.1,16.1
+Johor,Johor,2014,0.0,0.0,10.2
+Johor,Johor,2016,0.0,0.0,13.5
+Johor,Johor,2019,3.9,0.2,15.3
+Johor,Johor,2020,5.9,0.6,13.9
+Johor,Johor,2022,4.6,0.1,15.9
+Kedah,Kedah,2002,10.7,3.0,18.5
+Kedah,Kedah,2004,7.0,1.3,15.7
+Kedah,Kedah,2007,3.1,0.3,11.8
+Kedah,Kedah,2009,5.3,0.8,16.0
+Kedah,Kedah,2012,1.7,0.1,16.5
+Kedah,Kedah,2014,0.3,0.0,12.1
+Kedah,Kedah,2016,0.2,0.0,15.9
+Kedah,Kedah,2019,8.8,0.5,10.9
+Kedah,Kedah,2020,12.7,1.5,10.0
+Kedah,Kedah,2022,9.0,0.3,11.9
+Kelantan,Kelantan,2002,12.4,3.6,15.4
+Kelantan,Kelantan,2004,10.6,1.3,12.1
+Kelantan,Kelantan,2007,7.2,1.5,10.2
+Kelantan,Kelantan,2009,4.8,1.0,11.4
+Kelantan,Kelantan,2012,2.7,0.3,14.3
+Kelantan,Kelantan,2014,0.9,0.2,12.4
+Kelantan,Kelantan,2016,0.4,0.1,12.1
+Kelantan,Kelantan,2019,12.4,1.0,9.9
+Kelantan,Kelantan,2020,21.2,4.1,11.4
+Kelantan,Kelantan,2022,13.2,0.8,12.2
+KualaLumpur,W.P. Kuala Lumpur,2002,0.5,0.0,18.2
+KualaLumpur,W.P. Kuala Lumpur,2004,1.5,0.2,18.7
+KualaLumpur,W.P. Kuala Lumpur,2007,1.5,0.1,17.8
+KualaLumpur,W.P. Kuala Lumpur,2009,0.7,0.1,16.8
+KualaLumpur,W.P. Kuala Lumpur,2012,0.8,0.1,12.3
+KualaLumpur,W.P. Kuala Lumpur,2014,0.1,0.0,13.3
+KualaLumpur,W.P. Kuala Lumpur,2016,0.0,0.0,13.8
+KualaLumpur,W.P. Kuala Lumpur,2019,0.2,0.0,10.6
+KualaLumpur,W.P. Kuala Lumpur,2020,0.4,0.0,9.1
+KualaLumpur,W.P. Kuala Lumpur,2022,1.4,0.0,12.7
+Labuan,W.P. Labuan,2002,,,21.6
+Labuan,W.P. Labuan,2004,2.7,0.2,14.1
+Labuan,W.P. Labuan,2007,4.2,0.1,15.3
+Labuan,W.P. Labuan,2009,4.3,0.7,17.9
+Labuan,W.P. Labuan,2012,1.1,0.0,17.6
+Labuan,W.P. Labuan,2014,1.1,0.1,14.1
+Labuan,W.P. Labuan,2016,0.0,0.0,11.6
+Labuan,W.P. Labuan,2019,3.1,0.0,12.9
+Labuan,W.P. Labuan,2020,5.2,0.1,11.8
+Labuan,W.P. Labuan,2022,2.5,0.0,7.0
+Melaka,Melaka,2002,2.7,0.1,16.1
+Melaka,Melaka,2004,1.8,0.2,16.3
+Melaka,Melaka,2007,1.8,0.2,16.5
+Melaka,Melaka,2009,0.5,0.1,14.8
+Melaka,Melaka,2012,0.1,0.0,15.4
+Melaka,Melaka,2014,0.1,0.0,8.8
+Melaka,Melaka,2016,0.0,0.0,10.7
+Melaka,Melaka,2019,3.9,0.3,17.0
+Melaka,Melaka,2020,6.1,1.1,14.4
+Melaka,Melaka,2022,4.2,0.1,13.2
+NegeriSembilan,Negeri Sembilan,2002,2.2,0.3,18.1
+NegeriSembilan,Negeri Sembilan,2004,1.4,0.2,16.8
+NegeriSembilan,Negeri Sembilan,2007,1.3,0.1,15.3
+NegeriSembilan,Negeri Sembilan,2009,0.7,0.1,12.7
+NegeriSembilan,Negeri Sembilan,2012,0.5,0.1,15.5
+NegeriSembilan,Negeri Sembilan,2014,0.4,0.1,13.0
+NegeriSembilan,Negeri Sembilan,2016,0.2,0.0,15.5
+NegeriSembilan,Negeri Sembilan,2019,4.3,0.4,11.6
+NegeriSembilan,Negeri Sembilan,2020,6.5,1.2,10.5
+NegeriSembilan,Negeri Sembilan,2022,4.4,0.1,13.3
+Pahang,Pahang,2002,3.8,0.1,12.8
+Pahang,Pahang,2004,4.0,1.0,14.0
+Pahang,Pahang,2007,1.7,0.4,9.4
+Pahang,Pahang,2009,2.1,0.3,12.0
+Pahang,Pahang,2012,1.3,0.2,12.7
+Pahang,Pahang,2014,0.7,0.0,12.1
+Pahang,Pahang,2016,0.2,0.0,8.2
+Pahang,Pahang,2019,4.3,0.1,6.0
+Pahang,Pahang,2020,8.8,1.0,7.3
+Pahang,Pahang,2022,6.3,0.1,7.7
+Perak,Perak,2002,7.9,1.3,17.6
+Perak,Perak,2004,4.9,1.1,18.4
+Perak,Perak,2007,3.4,0.7,14.3
+Perak,Perak,2009,3.5,0.5,13.3
+Perak,Perak,2012,1.5,0.2,18.6
+Perak,Perak,2014,0.7,0.1,16.0
+Perak,Perak,2016,0.2,0.0,14.1
+Perak,Perak,2019,7.3,0.5,11.3
+Perak,Perak,2020,11.4,1.5,11.1
+Perak,Perak,2022,7.5,0.2,13.5
+Perlis,Perlis,2002,10.1,1.8,19.5
+Perlis,Perlis,2004,6.3,1.7,15.8
+Perlis,Perlis,2007,6.8,1.4,18.9
+Perlis,Perlis,2009,6.0,0.8,17.0
+Perlis,Perlis,2012,1.9,0.5,19.2
+Perlis,Perlis,2014,0.2,0.0,10.1
+Perlis,Perlis,2016,0.1,0.0,12.0
+Perlis,Perlis,2019,3.9,0.3,12.0
+Perlis,Perlis,2020,9.9,1.4,14.3
+Perlis,Perlis,2022,4.0,0.1,12.6
+PulauPinang,Pulau Pinang,2002,1.4,0.3,20.3
+PulauPinang,Pulau Pinang,2004,0.3,0.0,15.8
+PulauPinang,Pulau Pinang,2007,1.4,0.1,15.2
+PulauPinang,Pulau Pinang,2009,1.2,0.1,15.4
+PulauPinang,Pulau Pinang,2012,0.6,0.0,16.5
+PulauPinang,Pulau Pinang,2014,0.3,0.0,12.4
+PulauPinang,Pulau Pinang,2016,0.1,0.0,6.6
+PulauPinang,Pulau Pinang,2019,1.9,0.1,13.2
+PulauPinang,Pulau Pinang,2020,3.3,0.3,12.2
+PulauPinang,Pulau Pinang,2022,2.0,0.1,15.3
+Putrajaya,W.P. Putrajaya,2007,0.0,0.0,16.6
+Putrajaya,W.P. Putrajaya,2009,0.0,0.0,11.1
+Putrajaya,W.P. Putrajaya,2012,0.0,0.0,4.9
+Putrajaya,W.P. Putrajaya,2014,0.0,0.0,7.9
+Putrajaya,W.P. Putrajaya,2016,0.0,0.0,6.8
+Putrajaya,W.P. Putrajaya,2019,0.4,0.0,12.1
+Putrajaya,W.P. Putrajaya,2020,0.2,0.0,11.2
+Putrajaya,W.P. Putrajaya,2022,0.1,0.0,11.4
+Sabah,Sabah,2002,16.0,3.1,21.1
+Sabah,Sabah,2004,24.2,6.9,21.2
+Sabah,Sabah,2007,16.4,3.8,15.8
+Sabah,Sabah,2009,19.7,4.8,19.5
+Sabah,Sabah,2012,8.1,1.6,18.6
+Sabah,Sabah,2014,4.0,0.6,16.3
+Sabah,Sabah,2016,2.9,0.2,17.6
+Sabah,Sabah,2019,19.5,1.5,14.7
+Sabah,Sabah,2020,25.3,2.7,13.2
+Sabah,Sabah,2022,19.7,1.2,14.5
+Sarawak,Sarawak,2002,5.8,0.6,18.0
+Sarawak,Sarawak,2004,7.5,1.1,15.1
+Sarawak,Sarawak,2007,4.2,0.7,13.6
+Sarawak,Sarawak,2009,5.3,1.0,16.4
+Sarawak,Sarawak,2012,2.4,0.3,19.6
+Sarawak,Sarawak,2014,0.9,0.1,17.1
+Sarawak,Sarawak,2016,0.6,0.1,16.8
+Sarawak,Sarawak,2019,9.0,0.4,15.2
+Sarawak,Sarawak,2020,12.9,0.9,12.3
+Sarawak,Sarawak,2022,10.8,0.4,16.2
+Selangor,Selangor,2002,1.1,0.2,17.3
+Selangor,Selangor,2004,1.0,0.0,17.8
+Selangor,Selangor,2007,0.7,0.1,16.0
+Selangor,Selangor,2009,0.7,0.1,16.2
+Selangor,Selangor,2012,0.4,0.0,15.6
+Selangor,Selangor,2014,0.2,0.0,11.1
+Selangor,Selangor,2016,0.0,0.0,10.7
+Selangor,Selangor,2019,1.2,0.2,15.3
+Selangor,Selangor,2020,1.7,0.3,13.9
+Selangor,Selangor,2022,1.5,0.0,14.2
+Trengganu,Terengganu,2002,10.7,2.8,15.8
+Trengganu,Terengganu,2004,15.4,4.4,16.1
+Trengganu,Terengganu,2007,6.4,0.8,13.3
+Trengganu,Terengganu,2009,4.0,0.5,12.1
+Trengganu,Terengganu,2012,1.7,0.2,20.5
+Trengganu,Terengganu,2014,0.6,0.1,13.7
+Trengganu,Terengganu,2016,0.4,0.0,10.2
+Trengganu,Terengganu,2019,6.1,0.3,8.2
+Trengganu,Terengganu,2020,12.0,1.1,10.7
+Trengganu,Terengganu,2022,6.2,0.2,6.9

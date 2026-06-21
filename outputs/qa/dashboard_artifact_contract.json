@@ -1,0 +1,78 @@
+{
+  "dashboard_scope": "Malaysia state-level stakeholder view only",
+  "tabs": [
+    "Overview",
+    "State Review",
+    "Reliability Check"
+  ],
+  "runtime_rule": "Dash reads certified final artifacts only and does not recalculate model results.",
+  "explainability_rule": "RF SHAP describes the selected sensor-safe absolute-poverty model; it is not causal evidence.",
+  "artifacts": [
+    {
+      "path": "data/state_year_panel_modelready_2002_2022.csv",
+      "exists": true,
+      "size_mb": 0.15
+    },
+    {
+      "path": "data/state_model_predictions.csv",
+      "exists": true,
+      "size_mb": 0.005
+    },
+    {
+      "path": "outputs/qa/dosm_raw_lineage_validation.json",
+      "exists": true,
+      "size_mb": 0.001
+    },
+    {
+      "path": "data/boundaries/malaysia_adm1_geoboundaries.geojson",
+      "exists": true,
+      "size_mb": 0.556
+    },
+    {
+      "path": "outputs/metrics/malaysia_state_selected_model_loso_metrics.json",
+      "exists": true,
+      "size_mb": 0.001
+    },
+    {
+      "path": "outputs/metrics/malaysia_state_model_comparison.csv",
+      "exists": true,
+      "size_mb": 0.002
+    },
+    {
+      "path": "outputs/metrics/malaysia_state_loso_fold_predictions.csv",
+      "exists": true,
+      "size_mb": 0.328
+    },
+    {
+      "path": "outputs/metrics/malaysia_state_uncertainty_intervals.csv",
+      "exists": true,
+      "size_mb": 0.009
+    },
+    {
+      "path": "outputs/metrics/malaysia_state_temporal_backtest.csv",
+      "exists": true,
+      "size_mb": 0.011
+    },
+    {
+      "path": "outputs/qa/malaysia_state_temporal_backtest.json",
+      "exists": true,
+      "size_mb": 0.0
+    },
+    {
+      "path": "outputs/figures/mys_state_rf_shap_poverty_absolute.png",
+      "exists": true,
+      "size_mb": 0.157
+    },
+    {
+      "path": "outputs/metrics/malaysia_state_rf_shap_poverty_absolute.csv",
+      "exists": true,
+      "size_mb": 0.001
+    },
+    {
+      "path": "outputs/qa/malaysia_state_rf_shap_summary.json",
+      "exists": true,
+      "size_mb": 0.004
+    }
+  ],
+  "all_present": true
+}

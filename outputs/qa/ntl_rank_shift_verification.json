@@ -1,0 +1,31 @@
+{
+  "claim": "rank shifts < 1 position for 16/16 states at 2009->2012 sensor boundary (runtime verified)",
+  "metric_used": "wmean_ntl_mean_rank_by_year",
+  "boundary_year_pair": [
+    2009,
+    2012
+  ],
+  "states_compared": 16,
+  "per_state_rank_shift": {
+    "Johor": 0.062,
+    "Kedah": 0.062,
+    "Kelantan": 0.062,
+    "KualaLumpur": 0.0,
+    "Labuan": 0.188,
+    "Melaka": 0.0,
+    "NegeriSembilan": 0.062,
+    "Pahang": 0.062,
+    "Perak": 0.062,
+    "Perlis": 0.0,
+    "PulauPinang": 0.0,
+    "Putrajaya": 0.0,
+    "Sabah": 0.062,
+    "Sarawak": 0.062,
+    "Selangor": 0.0,
+    "Trengganu": 0.188
+  },
+  "states_within_1_position": 16,
+  "states_outside_1_position": 0,
+  "claim_verified": true,
+  "notes": "Rank is computed per survey year across all states. A shift of < 1 position means the state did not swap ordinal position relative to its neighbours at the sensor boundary. z-score normalization is used because it preserves this rank ordering without requiring a polynomial cross-sensor fit."
+}

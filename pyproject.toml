@@ -1,0 +1,51 @@
+[project]
+name = "malaysia-poverty-monitor"
+version = "1.0.0"
+description = "Interpretable state-level poverty monitoring for Malaysia"
+readme = "README.md"
+requires-python = "==3.11.*"
+license = { text = "MIT" }
+authors = [{ name = "AfifFarihin" }]
+dependencies = [
+  "matplotlib==3.10.8",
+  "numpy==1.26.4",
+  "pandas==2.3.3",
+  "pyyaml==6.0.3",
+  "requests>=2.32,<3",
+  "scikit-learn==1.8.0",
+  "scipy==1.17.0",
+  "seaborn==0.13.2",
+  "shap==0.45.0",
+  "xgboost==2.0.3",
+]
+
+[project.optional-dependencies]
+dashboard = [
+  "dash==4.1.0",
+  "dash-bootstrap-components==2.0.4",
+  "plotly==6.6.0",
+]
+notebooks = [
+  "ipykernel==7.1.0",
+  "jupyterlab==4.6.0",
+  "nbclient==0.10.2",
+  "nbformat==5.10.4",
+]
+[dependency-groups]
+dev = [
+  "pip-audit>=2.9,<3",
+  "pytest>=8.3,<10",
+  "ruff>=0.9,<1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

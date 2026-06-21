@@ -1,0 +1,63 @@
+{
+  "lineage": "DOSM raw state poverty data -> cleaned DOSM labels -> retained model-ready panel target columns",
+  "raw": {
+    "dataset_id": "hh_poverty_state",
+    "api_url": "https://api.data.gov.my/data-catalogue?id=hh_poverty_state&limit=10000",
+    "csv_url": "https://storage.dosm.gov.my/hies/hh_poverty_state.csv",
+    "retrieval_mode": "api.data.gov.my",
+    "retrieved_at_utc": "2026-06-21T02:06:19.077258+00:00",
+    "raw_path": "data\\raw\\dosm\\hh_poverty_state.csv",
+    "rows": 294,
+    "columns": [
+      "date",
+      "state",
+      "poverty_absolute",
+      "poverty_hardcore",
+      "poverty_relative"
+    ],
+    "sha256": "ea223145dd3b4ea5a2278ffc2d7e49567ce37892963f77630b69217e62784b04"
+  },
+  "clean": {
+    "path": "data\\interim\\dosm_poverty_state_clean.csv",
+    "rows": 158,
+    "state_count": 16,
+    "survey_years": [
+      2002,
+      2004,
+      2007,
+      2009,
+      2012,
+      2014,
+      2016,
+      2019,
+      2020,
+      2022
+    ],
+    "sha256": "61726709cd69ee4a548342898d2ce6fb77cb469eaf4d71829fd17e6eeaa5a291"
+  },
+  "panel": {
+    "path": "data\\state_year_panel_modelready_2002_2022.csv",
+    "rows": 158,
+    "state_count": 16,
+    "survey_years": [
+      2002,
+      2004,
+      2007,
+      2009,
+      2012,
+      2014,
+      2016,
+      2019,
+      2020,
+      2022
+    ]
+  },
+  "validation": {
+    "shared_rows": 158,
+    "clean_only_rows": 0,
+    "panel_only_rows": 0,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "status": "PASS"
+  }
+}

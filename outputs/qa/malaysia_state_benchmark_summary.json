@@ -1,0 +1,304 @@
+{
+  "panel_rows": 158,
+  "state_count": 16,
+  "survey_years": [
+    2002,
+    2004,
+    2007,
+    2009,
+    2012,
+    2014,
+    2016,
+    2019,
+    2020,
+    2022
+  ],
+  "feature_sets": {
+    "year_only": [
+      "year"
+    ],
+    "current_full": [
+      "year",
+      "pop_sum_grid_log1p",
+      "wmean_elevation",
+      "wmean_evi_mean",
+      "wmean_frac_cropland",
+      "wmean_frac_forest",
+      "wmean_frac_urban",
+      "wmean_ndvi_peak",
+      "wmean_ndvi_range",
+      "wmean_ntl_highshare",
+      "wmean_ntl_mean",
+      "wmean_slope",
+      "dist_ntl_mean_mean",
+      "dist_ntl_mean_std",
+      "dist_ntl_mean_p10",
+      "dist_ntl_mean_iqr",
+      "dist_ntl_mean_cv",
+      "dist_urban_cell_share_thr02",
+      "dist_bright_cell_share_thr1",
+      "dist_bright_pop_share_thr1"
+    ],
+    "sensor_safe": [
+      "year",
+      "pop_sum_grid_log1p",
+      "wmean_elevation",
+      "wmean_evi_mean",
+      "wmean_frac_cropland",
+      "wmean_frac_forest",
+      "wmean_frac_urban",
+      "wmean_ndvi_peak",
+      "wmean_ndvi_range",
+      "wmean_slope",
+      "dist_urban_cell_share_thr02"
+    ]
+  },
+  "certified_metrics_after_run": {
+    "country": "MYS",
+    "targets": {
+      "poverty_absolute": {
+        "loso_mae_pp": 2.4425,
+        "loso_r2": 0.2759,
+        "loso_spearman": 0.7945,
+        "loso_pearson": 0.5559,
+        "n_state_years": 157,
+        "n_states": 16,
+        "n_survey_years": 10,
+        "ablation_year_only_mae_pp": 2.9609,
+        "ablation_year_only_r2": 0.1187,
+        "satellite_contribution_pp": 0.5184,
+        "selected_model": "rf_sensor_safe",
+        "feature_policy": "sensor_safe",
+        "feature_count": 11
+      },
+      "poverty_relative": {
+        "loso_mae_pp": 2.2364,
+        "loso_r2": 0.2472,
+        "loso_spearman": 0.4313,
+        "loso_pearson": 0.5112,
+        "n_state_years": 158,
+        "n_states": 16,
+        "n_survey_years": 10,
+        "ablation_year_only_mae_pp": 2.2364,
+        "ablation_year_only_r2": 0.2472,
+        "satellite_contribution_pp": 0.0,
+        "selected_model": "year_only_xgb",
+        "feature_policy": "year_only",
+        "feature_count": 1
+      }
+    }
+  },
+  "comparison_path": "outputs\\metrics\\malaysia_state_model_comparison.csv",
+  "predictions_path": "outputs\\metrics\\malaysia_state_loso_fold_predictions.csv",
+  "uncertainty_path": "outputs\\metrics\\malaysia_state_uncertainty_intervals.csv",
+  "temporal_backtest_path": "outputs\\metrics\\malaysia_state_temporal_backtest.csv",
+  "temporal_backtest_summary_path": "outputs\\qa\\malaysia_state_temporal_backtest.json",
+  "promotion_path": "outputs\\qa\\malaysia_state_model_promotion.json",
+  "rf_continuity_note_path": "outputs\\qa\\malaysia_state_rf_continuity_benchmark.md",
+  "rf_shap": {
+    "target": "poverty_absolute",
+    "model": "rf_sensor_safe",
+    "feature_policy": "sensor_safe",
+    "feature_count": 11,
+    "panel_rows": 157,
+    "shap_scale": "log1p poverty percentage points; descriptive post-selection explanation only",
+    "validation_caveat": "RF SHAP is computed after model selection on the full Malaysia state-level panel. It explains fitted model behavior and is not held-out validation or causal evidence.",
+    "agreement_with_xgboost_story": {
+      "time_trend": true,
+      "vegetation": true,
+      "nighttime_lights": false,
+      "urbanisation": true
+    },
+    "top_features": [
+      {
+        "mean_abs_rank": 1,
+        "feature": "year",
+        "feature_group": "year/time",
+        "mean_abs_shap_log_points": 0.347192,
+        "importance_share": 0.323388
+      },
+      {
+        "mean_abs_rank": 2,
+        "feature": "wmean_ndvi_peak",
+        "feature_group": "vegetation",
+        "mean_abs_shap_log_points": 0.26629,
+        "importance_share": 0.248033
+      },
+      {
+        "mean_abs_rank": 3,
+        "feature": "dist_urban_cell_share_thr02",
+        "feature_group": "urbanisation",
+        "mean_abs_shap_log_points": 0.098396,
+        "importance_share": 0.09165
+      },
+      {
+        "mean_abs_rank": 4,
+        "feature": "wmean_evi_mean",
+        "feature_group": "vegetation",
+        "mean_abs_shap_log_points": 0.091045,
+        "importance_share": 0.084803
+      },
+      {
+        "mean_abs_rank": 5,
+        "feature": "wmean_frac_urban",
+        "feature_group": "urbanisation",
+        "mean_abs_shap_log_points": 0.071051,
+        "importance_share": 0.06618
+      },
+      {
+        "mean_abs_rank": 6,
+        "feature": "pop_sum_grid_log1p",
+        "feature_group": "population",
+        "mean_abs_shap_log_points": 0.062365,
+        "importance_share": 0.058089
+      },
+      {
+        "mean_abs_rank": 7,
+        "feature": "wmean_frac_cropland",
+        "feature_group": "land cover",
+        "mean_abs_shap_log_points": 0.038016,
+        "importance_share": 0.03541
+      },
+      {
+        "mean_abs_rank": 8,
+        "feature": "wmean_slope",
+        "feature_group": "topography",
+        "mean_abs_shap_log_points": 0.037753,
+        "importance_share": 0.035164
+      },
+      {
+        "mean_abs_rank": 9,
+        "feature": "wmean_frac_forest",
+        "feature_group": "land cover",
+        "mean_abs_shap_log_points": 0.025465,
+        "importance_share": 0.023719
+      },
+      {
+        "mean_abs_rank": 10,
+        "feature": "wmean_elevation",
+        "feature_group": "topography",
+        "mean_abs_shap_log_points": 0.022019,
+        "importance_share": 0.02051
+      },
+      {
+        "mean_abs_rank": 11,
+        "feature": "wmean_ndvi_range",
+        "feature_group": "vegetation",
+        "mean_abs_shap_log_points": 0.014015,
+        "importance_share": 0.013054
+      }
+    ],
+    "grouped_importance": [
+      {
+        "feature_group": "vegetation",
+        "mean_abs_shap_log_points": 0.37135,
+        "importance_share": 0.34589
+      },
+      {
+        "feature_group": "year/time",
+        "mean_abs_shap_log_points": 0.347192,
+        "importance_share": 0.323388
+      },
+      {
+        "feature_group": "urbanisation",
+        "mean_abs_shap_log_points": 0.169448,
+        "importance_share": 0.15783
+      },
+      {
+        "feature_group": "land cover",
+        "mean_abs_shap_log_points": 0.063481,
+        "importance_share": 0.059128
+      },
+      {
+        "feature_group": "population",
+        "mean_abs_shap_log_points": 0.062365,
+        "importance_share": 0.058089
+      },
+      {
+        "feature_group": "topography",
+        "mean_abs_shap_log_points": 0.059772,
+        "importance_share": 0.055674
+      }
+    ],
+    "figure_path": "outputs\\figures\\mys_state_rf_shap_poverty_absolute.png",
+    "table_path": "outputs\\metrics\\malaysia_state_rf_shap_poverty_absolute.csv",
+    "summary_path": "outputs\\qa\\malaysia_state_rf_shap_summary.json"
+  },
+  "promotion": {
+    "promoted": true,
+    "selected_model": "rf_sensor_safe",
+    "relative_selected_model": "year_only_xgb",
+    "best_absolute_model": "rf_sensor_safe",
+    "current_absolute_model": "current_xgb",
+    "rule": "For absolute poverty, restrict eligibility to the predeclared sensor-safe feature policy, then select lowest LOSO MAE; break ties by higher Spearman correlation and model name. Relative poverty uses the lowest-MAE benchmark and remains a secondary negative result.",
+    "manual_promotion_required": false,
+    "manual_promotion_review_status": "not_applicable_deterministic_rule",
+    "manual_promotion_reason": "No manual override is permitted by the encoded selection rule.",
+    "current_absolute": {
+      "target": "poverty_absolute",
+      "model": "current_xgb",
+      "feature_policy": "current_full",
+      "feature_count": 20,
+      "loso_mae_pp": 2.5372,
+      "loso_rmse": 4.6639,
+      "loso_r2": 0.1835,
+      "loso_spearman": 0.8102,
+      "loso_pearson": 0.4944,
+      "n_state_years": 157,
+      "n_states": 16,
+      "n_survey_years": 10
+    },
+    "selected_absolute": {
+      "target": "poverty_absolute",
+      "model": "rf_sensor_safe",
+      "feature_policy": "sensor_safe",
+      "feature_count": 11,
+      "loso_mae_pp": 2.4425,
+      "loso_rmse": 4.3923,
+      "loso_r2": 0.2759,
+      "loso_spearman": 0.7945,
+      "loso_pearson": 0.5559,
+      "n_state_years": 157,
+      "n_states": 16,
+      "n_survey_years": 10
+    },
+    "best_absolute": {
+      "target": "poverty_absolute",
+      "model": "rf_sensor_safe",
+      "feature_policy": "sensor_safe",
+      "feature_count": 11,
+      "loso_mae_pp": 2.4425,
+      "loso_rmse": 4.3923,
+      "loso_r2": 0.2759,
+      "loso_spearman": 0.7945,
+      "loso_pearson": 0.5559,
+      "n_state_years": 157,
+      "n_states": 16,
+      "n_survey_years": 10
+    },
+    "paired_mae_delta_selected_vs_current": {
+      "metric": "mae",
+      "candidate_col": "rf_sensor_safe",
+      "baseline_col": "current_xgb",
+      "observed_improvement": 0.09467183040474003,
+      "ci_lower": -0.11573825125098113,
+      "ci_upper": 0.3263661614543879,
+      "n_boot": 2000,
+      "group_col": "state_key",
+      "n_groups": 16
+    },
+    "paired_mae_delta_best_vs_current": {
+      "metric": "mae",
+      "candidate_col": "rf_sensor_safe",
+      "baseline_col": "current_xgb",
+      "observed_improvement": 0.09467183040474003,
+      "ci_lower": -0.11573825125098113,
+      "ci_upper": 0.3263661614543879,
+      "n_boot": 2000,
+      "group_col": "state_key",
+      "n_groups": 16
+    },
+    "certified_metrics_refreshed_from_local_training": true,
+    "relative_poverty_caveat": "Relative poverty remains secondary; year-only is stronger and should not be claimed as satellite-improved."
+  }
+}

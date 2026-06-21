@@ -1,0 +1,17 @@
+target,model,feature_policy,feature_count,loso_mae_pp,loso_rmse,loso_r2,loso_spearman,loso_pearson,n_state_years,n_states,n_survey_years
+poverty_absolute,rf_sensor_safe,sensor_safe,11,2.4425,4.3923,0.2759,0.7945,0.5559,157,16,10
+poverty_absolute,rf_current_full,current_full,20,2.5122,4.5445,0.2248,0.7886,0.5147,157,16,10
+poverty_absolute,current_xgb,current_full,20,2.5372,4.6639,0.1835,0.8102,0.4944,157,16,10
+poverty_absolute,sensor_safe_xgb,sensor_safe,11,2.6068,4.7364,0.158,0.7851,0.4733,157,16,10
+poverty_absolute,sensor_safe_year_dummies_ridge,sensor_safe_year_dummies,11,2.8177,4.6056,0.2038,0.7316,0.4951,157,16,10
+poverty_absolute,year_only_xgb,year_only,1,2.9609,4.8456,0.1187,0.491,0.4161,157,16,10
+poverty_absolute,sensor_safe_elasticnet,sensor_safe,11,3.2968,5.0453,0.0445,0.5285,0.3255,157,16,10
+poverty_absolute,sensor_safe_ridge,sensor_safe,11,3.6556,5.3334,-0.0677,0.4462,0.2932,157,16,10
+poverty_relative,year_only_xgb,year_only,1,2.2364,2.8891,0.2472,0.4313,0.5112,158,16,10
+poverty_relative,current_xgb,current_full,20,2.5228,3.2736,0.0335,0.4271,0.3882,158,16,10
+poverty_relative,rf_current_full,current_full,20,2.6302,3.4041,-0.0451,0.3654,0.3296,158,16,10
+poverty_relative,rf_sensor_safe,sensor_safe,11,2.6314,3.4699,-0.0859,0.3445,0.309,158,16,10
+poverty_relative,sensor_safe_xgb,sensor_safe,11,2.6384,3.4618,-0.0807,0.3561,0.3228,158,16,10
+poverty_relative,sensor_safe_elasticnet,sensor_safe,11,2.815,3.545,-0.1334,0.23,0.223,158,16,10
+poverty_relative,sensor_safe_year_dummies_ridge,sensor_safe_year_dummies,11,3.8229,4.8174,-1.093,0.0741,0.0738,158,16,10
+poverty_relative,sensor_safe_ridge,sensor_safe,11,3.8369,4.8099,-1.0864,0.08,0.0895,158,16,10

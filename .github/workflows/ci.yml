@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: uv sync --extra dashboard --extra notebooks --group dev
+      - name: Lint
+        run: uv run ruff check dashboard_stakeholder scripts tests
+      - name: Verify retained-data lineage
+        run: uv run python scripts/verify_lineage.py
+      - name: Audit dependencies
+        run: uv run pip-audit
+      - name: Execute notebook workflow
+        run: uv run python scripts/run_notebooks.py
+      - name: Verify generated artifacts
+        run: uv run pytest -q

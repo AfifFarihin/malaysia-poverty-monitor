@@ -1,0 +1,129 @@
+{
+  "target": "poverty_absolute",
+  "model": "rf_sensor_safe",
+  "feature_policy": "sensor_safe",
+  "feature_count": 11,
+  "panel_rows": 157,
+  "shap_scale": "log1p poverty percentage points; descriptive post-selection explanation only",
+  "validation_caveat": "RF SHAP is computed after model selection on the full Malaysia state-level panel. It explains fitted model behavior and is not held-out validation or causal evidence.",
+  "agreement_with_xgboost_story": {
+    "time_trend": true,
+    "vegetation": true,
+    "nighttime_lights": false,
+    "urbanisation": true
+  },
+  "top_features": [
+    {
+      "mean_abs_rank": 1,
+      "feature": "year",
+      "feature_group": "year/time",
+      "mean_abs_shap_log_points": 0.347192,
+      "importance_share": 0.323388
+    },
+    {
+      "mean_abs_rank": 2,
+      "feature": "wmean_ndvi_peak",
+      "feature_group": "vegetation",
+      "mean_abs_shap_log_points": 0.26629,
+      "importance_share": 0.248033
+    },
+    {
+      "mean_abs_rank": 3,
+      "feature": "dist_urban_cell_share_thr02",
+      "feature_group": "urbanisation",
+      "mean_abs_shap_log_points": 0.098396,
+      "importance_share": 0.09165
+    },
+    {
+      "mean_abs_rank": 4,
+      "feature": "wmean_evi_mean",
+      "feature_group": "vegetation",
+      "mean_abs_shap_log_points": 0.091045,
+      "importance_share": 0.084803
+    },
+    {
+      "mean_abs_rank": 5,
+      "feature": "wmean_frac_urban",
+      "feature_group": "urbanisation",
+      "mean_abs_shap_log_points": 0.071051,
+      "importance_share": 0.06618
+    },
+    {
+      "mean_abs_rank": 6,
+      "feature": "pop_sum_grid_log1p",
+      "feature_group": "population",
+      "mean_abs_shap_log_points": 0.062365,
+      "importance_share": 0.058089
+    },
+    {
+      "mean_abs_rank": 7,
+      "feature": "wmean_frac_cropland",
+      "feature_group": "land cover",
+      "mean_abs_shap_log_points": 0.038016,
+      "importance_share": 0.03541
+    },
+    {
+      "mean_abs_rank": 8,
+      "feature": "wmean_slope",
+      "feature_group": "topography",
+      "mean_abs_shap_log_points": 0.037753,
+      "importance_share": 0.035164
+    },
+    {
+      "mean_abs_rank": 9,
+      "feature": "wmean_frac_forest",
+      "feature_group": "land cover",
+      "mean_abs_shap_log_points": 0.025465,
+      "importance_share": 0.023719
+    },
+    {
+      "mean_abs_rank": 10,
+      "feature": "wmean_elevation",
+      "feature_group": "topography",
+      "mean_abs_shap_log_points": 0.022019,
+      "importance_share": 0.02051
+    },
+    {
+      "mean_abs_rank": 11,
+      "feature": "wmean_ndvi_range",
+      "feature_group": "vegetation",
+      "mean_abs_shap_log_points": 0.014015,
+      "importance_share": 0.013054
+    }
+  ],
+  "grouped_importance": [
+    {
+      "feature_group": "vegetation",
+      "mean_abs_shap_log_points": 0.37135,
+      "importance_share": 0.34589
+    },
+    {
+      "feature_group": "year/time",
+      "mean_abs_shap_log_points": 0.347192,
+      "importance_share": 0.323388
+    },
+    {
+      "feature_group": "urbanisation",
+      "mean_abs_shap_log_points": 0.169448,
+      "importance_share": 0.15783
+    },
+    {
+      "feature_group": "land cover",
+      "mean_abs_shap_log_points": 0.063481,
+      "importance_share": 0.059128
+    },
+    {
+      "feature_group": "population",
+      "mean_abs_shap_log_points": 0.062365,
+      "importance_share": 0.058089
+    },
+    {
+      "feature_group": "topography",
+      "mean_abs_shap_log_points": 0.059772,
+      "importance_share": 0.055674
+    }
+  ],
+  "figure_path": "outputs\\figures\\mys_state_rf_shap_poverty_absolute.png",
+  "table_path": "outputs\\metrics\\malaysia_state_rf_shap_poverty_absolute.csv",
+  "summary_path": "outputs\\qa\\malaysia_state_rf_shap_summary.json"
+}

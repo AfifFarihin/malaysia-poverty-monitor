@@ -1,0 +1,13 @@
+{
+  "target": "poverty_absolute",
+  "model": "rf_sensor_safe",
+  "protocol": "rolling origin; every test year is predicted using strictly earlier survey years",
+  "first_test_year": 2012,
+  "last_test_year": 2022,
+  "n_test_rows": 96,
+  "mae_pp": 2.6561,
+  "rmse": 4.2434,
+  "r2": 0.3259,
+  "spearman": 0.6012,
+  "caveat": "Secondary robustness check; the model family was selected using LOSO results on the same panel."
+}

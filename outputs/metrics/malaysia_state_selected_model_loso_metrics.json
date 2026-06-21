@@ -1,0 +1,35 @@
+{
+  "country": "MYS",
+  "targets": {
+    "poverty_absolute": {
+      "loso_mae_pp": 2.4425,
+      "loso_r2": 0.2759,
+      "loso_spearman": 0.7945,
+      "loso_pearson": 0.5559,
+      "n_state_years": 157,
+      "n_states": 16,
+      "n_survey_years": 10,
+      "ablation_year_only_mae_pp": 2.9609,
+      "ablation_year_only_r2": 0.1187,
+      "satellite_contribution_pp": 0.5184,
+      "selected_model": "rf_sensor_safe",
+      "feature_policy": "sensor_safe",
+      "feature_count": 11
+    },
+    "poverty_relative": {
+      "loso_mae_pp": 2.2364,
+      "loso_r2": 0.2472,
+      "loso_spearman": 0.4313,
+      "loso_pearson": 0.5112,
+      "n_state_years": 158,
+      "n_states": 16,
+      "n_survey_years": 10,
+      "ablation_year_only_mae_pp": 2.2364,
+      "ablation_year_only_r2": 0.2472,
+      "satellite_contribution_pp": 0.0,
+      "selected_model": "year_only_xgb",
+      "feature_policy": "year_only",
+      "feature_count": 1
+    }
+  }
+}

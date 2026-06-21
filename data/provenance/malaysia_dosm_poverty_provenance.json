@@ -1,0 +1,26 @@
+{
+  "dataset": "DOSM Malaysia state-level poverty labels",
+  "dataset_id": "hh_poverty_state",
+  "catalogue_url": "https://open.dosm.gov.my/data-catalogue/hh_poverty_state",
+  "source_url": "https://storage.dosm.gov.my/hies/hh_poverty_state.csv",
+  "api_url": "https://api.data.gov.my/data-catalogue?id=hh_poverty_state&limit=10000",
+  "raw_file": "data/raw/dosm/hh_poverty_state.csv",
+  "clean_file": "data/interim/dosm_poverty_state_clean.csv",
+  "model_ready_panel": "data/state_year_panel_modelready_2002_2022.csv",
+  "lineage_validation": "outputs/qa/dosm_raw_lineage_validation.json",
+  "raw_sha256": "ea223145dd3b4ea5a2278ffc2d7e49567ce37892963f77630b69217e62784b04",
+  "clean_sha256": "61726709cd69ee4a548342898d2ce6fb77cb469eaf4d71829fd17e6eeaa5a291",
+  "panel_sha256": "1cfdab1c70d48a2d1f583ad3589b9da55319d73ce7faf94351fac70751e7e0f8",
+  "retrieval_mode": "api.data.gov.my",
+  "retrieved_at_utc": "2026-05-20T06:38:51.815099+00:00",
+  "validation_status": "PASS",
+  "validation_summary": {
+    "shared_rows": 158,
+    "clean_only_rows": 0,
+    "panel_only_rows": 0,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "status": "PASS"
+  },
+  "notes": "The repository retains official DOSM raw state poverty labels, cleaned project-year labels, and a QA check proving that cleaned labels match the target columns in the retained model-ready panel. Satellite/geospatial predictors are retained as derived state-level features with separate provenance notes."
+}
